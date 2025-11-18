@@ -2,7 +2,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
-export default defineConfig({
-	plugins: [react()],
-	base: "/Aggregat/",
+export default defineConfig(({ command }) => {
+	const base = command === "serve" ? "/" : "/Aggregat/";
+	return {
+		plugins: [react()],
+		base: base,
+	};
 });

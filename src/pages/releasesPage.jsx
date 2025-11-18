@@ -7,33 +7,34 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 function ReleasesPage() {
+	const baseUrl = import.meta.env.BASE_URL;
 	const releases = [
 		{
 			id: "AGG001",
 			artist: "Various Artists",
 			title: "RAFT001 Compilation",
-			image: "/assets/raft001.jpg",
+			image: `${baseUrl}assets/raft001.jpg`,
 			link: "#",
 		},
 		{
 			id: "AGG002",
 			artist: "Raddler Express",
 			title: "Express EP",
-			image: "/assets/raddler-express.jpg",
+			image: `${baseUrl}assets/raddler-express.jpg`,
 			link: "#",
 		},
 		{
 			id: "AGG003",
 			artist: "Various Artists",
 			title: "Speed Bump Vol. 2",
-			image: "/assets/speedbump-vol2.jpg",
+			image: `${baseUrl}assets/speedbump-vol2.jpg`,
 			link: "#",
 		},
 		{
 			id: "AGG004",
 			artist: "Various Artists",
 			title: "[T001]",
-			image: "/assets/t001.jpg",
+			image: `${baseUrl}assets/t001.jpg`,
 			link: "#",
 		},
 	];

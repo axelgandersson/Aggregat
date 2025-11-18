@@ -7,7 +7,7 @@ function App() {
 	console.log("App component is rendering");
 
 	return (
-		<Router>
+		<Router basename="/Aggregat">
 			<Routes>
 				<Route path="/" element={<LandingPage />} />
 				<Route path="/releases" element={<ReleasesPage />} />

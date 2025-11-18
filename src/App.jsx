@@ -5,9 +5,10 @@ import ReleasesPage from "./pages/releasesPage";
 
 function App() {
 	console.log("App component is rendering");
+	const basename = import.meta.env.BASE_URL;
 
 	return (
-		<Router basename="/Aggregat">
+		<Router basename={basename}>
 			<Routes>
 				<Route path="/" element={<LandingPage />} />
 				<Route path="/releases" element={<ReleasesPage />} />

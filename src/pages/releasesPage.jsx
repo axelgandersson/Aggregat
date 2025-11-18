@@ -1,3 +1,4 @@
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation as SwiperNavigation, Keyboard } from "swiper/modules";
 import Navigation from "../components/Navigation";
